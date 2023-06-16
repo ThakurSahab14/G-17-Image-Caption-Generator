@@ -1,0 +1,19 @@
+{%extends "base.html"%}
+    
+{%block content%}
+
+<center>
+
+<h1 class='display-2' style="color: black;">Generated Description </h1>
+<div>
+
+</div>
+<img src="{{url_for('static', filename='file.jpg')}}" alt="image" height=400px class="img">
+<h2 class='head2' >
+<span>"</span>	{{data}} <span>"</span>
+</h2>
+<br>
+<A HREF='http://127.0.0.1:5000/'class='button btn' >Try with a new image</A>
+</center>
+
+{%endblock%}

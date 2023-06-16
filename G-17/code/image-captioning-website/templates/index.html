@@ -1,0 +1,19 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+<div class="main-background">
+    <div class="main-head">
+        <h1 data-shadow='dang!' class="main-caption">Image Caption Generator</h1>
+    </div>
+<div class="main-form">
+    <form action="{{url_for('after')}}" method='POST' enctype='multipart/form-data' style="margin-top: 150px;" class="main-form" >
+        <input type="file" name='file1' class="main-img">
+    <input type="submit" name="btn" value='Generate' class='button'> 
+    </form>
+</div>
+
+</div>
+
+
+{%endblock%}
